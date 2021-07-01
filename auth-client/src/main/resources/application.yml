@@ -1,0 +1,12 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          github:
+            clientId: 74caa86bd25e1b9504d8
+            clientSecret: 1b8ef181e9d1c62b2d57fad4a469b0fc163941df
+  application:
+    name: auth-client
+server:
+  port: 8087

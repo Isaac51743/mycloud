@@ -1,0 +1,55 @@
+2021-05-26 19:29:04.095  INFO 5394 --- [main] c.i.g.GatewayServerApplicationTests      : Starting GatewayServerApplicationTests using Java 1.8.0_181 on YuehangdeMacBook-Pro.local with PID 5394 (started by yuehangzhao in /Users/yuehangzhao/IdeaProjects/my-cloud1/gateway-server)
+2021-05-26 19:29:04.103 DEBUG 5394 --- [main] c.i.g.GatewayServerApplicationTests      : Running with Spring Boot v2.4.5, Spring v5.3.6
+2021-05-26 19:29:04.103  INFO 5394 --- [main] c.i.g.GatewayServerApplicationTests      : No active profile set, falling back to default profiles: default
+2021-05-26 19:29:05.040  INFO 5394 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=6b669552-7bfe-36df-93ab-61f0a0dbca3f
+2021-05-26 19:29:06.245  INFO 5394 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2021-05-26 19:29:06.246  INFO 5394 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2021-05-26 19:29:06.246  INFO 5394 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2021-05-26 19:29:06.246  INFO 5394 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2021-05-26 19:29:06.247  INFO 5394 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2021-05-26 19:29:06.247  INFO 5394 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2021-05-26 19:29:06.247  INFO 5394 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2021-05-26 19:29:06.247  INFO 5394 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2021-05-26 19:29:06.247  INFO 5394 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2021-05-26 19:29:06.247  INFO 5394 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2021-05-26 19:29:06.247  INFO 5394 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2021-05-26 19:29:06.247  INFO 5394 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2021-05-26 19:29:06.247  INFO 5394 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2021-05-26 19:29:07.033  INFO 5394 --- [main] c.i.g.GatewayServerApplicationTests      : Started GatewayServerApplicationTests in 3.469 seconds (JVM running for 4.973)
+2021-05-26 19:29:07.425 TRACE 5394 --- [main] c.i.g.GatewayServerApplicationTests      : this is a trace log
+2021-05-26 19:29:07.425 DEBUG 5394 --- [main] c.i.g.GatewayServerApplicationTests      : this is a debug log
+2021-05-26 19:29:07.426  INFO 5394 --- [main] c.i.g.GatewayServerApplicationTests      : this is a info log
+2021-05-26 19:29:07.426  WARN 5394 --- [main] c.i.g.GatewayServerApplicationTests      : this is a warn log
+2021-05-26 19:29:07.426 ERROR 5394 --- [main] c.i.g.GatewayServerApplicationTests      : this is a error log
+2021-05-26 19:30:59.916  INFO 5526 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=6b669552-7bfe-36df-93ab-61f0a0dbca3f
+2021-05-26 19:31:00.812  INFO 5526 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2021-05-26 19:31:00.812  INFO 5526 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2021-05-26 19:31:00.813  INFO 5526 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2021-05-26 19:31:00.813  INFO 5526 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2021-05-26 19:31:00.813  INFO 5526 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2021-05-26 19:31:00.813  INFO 5526 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2021-05-26 19:31:00.813  INFO 5526 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2021-05-26 19:31:00.813  INFO 5526 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2021-05-26 19:31:00.813  INFO 5526 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2021-05-26 19:31:00.813  INFO 5526 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2021-05-26 19:31:00.814  INFO 5526 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2021-05-26 19:31:00.814  INFO 5526 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2021-05-26 19:31:00.814  INFO 5526 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2021-05-26 19:31:01.415  WARN 5526 --- [main] c.i.g.GatewayServerApplicationTests      : this is a warn log
+2021-05-26 19:31:01.416 ERROR 5526 --- [main] c.i.g.GatewayServerApplicationTests      : this is a error log
+2021-05-26 20:45:41.430  INFO 11881 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=6b669552-7bfe-36df-93ab-61f0a0dbca3f
+2021-05-26 20:45:42.319  INFO 11881 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2021-05-26 20:45:42.319  INFO 11881 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2021-05-26 20:45:42.319  INFO 11881 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2021-05-26 20:45:42.319  INFO 11881 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2021-05-26 20:45:42.320  INFO 11881 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2021-05-26 20:45:42.320  INFO 11881 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2021-05-26 20:45:42.320  INFO 11881 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2021-05-26 20:45:42.320  INFO 11881 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2021-05-26 20:45:42.320  INFO 11881 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2021-05-26 20:45:42.320  INFO 11881 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2021-05-26 20:45:42.320  INFO 11881 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2021-05-26 20:45:42.320  INFO 11881 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2021-05-26 20:45:42.320  INFO 11881 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2021-05-26 20:45:42.891  WARN 11881 --- [main] c.i.g.GatewayServerApplicationTests      : this is a warn log
+2021-05-26 20:45:42.891 ERROR 11881 --- [main] c.i.g.GatewayServerApplicationTests      : this is a error log

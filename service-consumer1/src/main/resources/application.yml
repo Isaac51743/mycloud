@@ -1,0 +1,32 @@
+server:
+  port: 8082
+spring:
+  application:
+    name: service-consumer1
+  rabbitmq:
+    host: localhost
+    username: guest
+    password: guest
+  cloud:
+    config:
+      uri: http://127.0.0.1:8083            # url of config server
+      label: main                                                        # branch name in github
+      profile: dev                                                    # suffix of file name
+      name: service-consumer1                                # file name
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+management:
+  endpoints:
+    enabled-by-default: true
+    web:
+      exposure:
+        include: "*"
+
+  endpoint:
+    health:
+      show-details: always
+
+

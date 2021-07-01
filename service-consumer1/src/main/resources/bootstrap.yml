@@ -1,0 +1,7 @@
+spring:
+  cloud:
+    config:
+      uri: http://127.0.0.1:8083
+      label: main
+      profile: dev
+      name: service-consumer1

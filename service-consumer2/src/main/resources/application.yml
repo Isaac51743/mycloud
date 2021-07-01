@@ -1,0 +1,56 @@
+server:
+  port: 8084
+spring:
+  application:
+    name: service-consumer2
+  rabbitmq:
+    host: localhost
+    username: guest
+    password: guest
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+
+management:
+  endpoints:
+    enabled-by-default: true
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+  health:
+    circuitbreakers:
+      enabled: true
+    ratelimiters:
+      enabled: true
+
+resilience4j:
+  circuitbreaker:
+    instances:
+      backendA:
+        failure-rate-threshold: 50  #  %
+        ring-buffer-size-in-closed-state: 5
+        ring-buffer-size-in-half-open-state: 5
+        wait-duration-in-open-state: 10000
+        register-health-indicator: true
+
+  ratelimiter:
+    instances:
+      backendB:
+        limit-for-period: 5
+        limit-refresh-period: 10s
+        register-health-indicator: true
+
+  retry:
+    instances:
+      backendC:
+        max-retry-Attempts: 3
+        wait-duration: 1s
+        register-health-indicator: true
+

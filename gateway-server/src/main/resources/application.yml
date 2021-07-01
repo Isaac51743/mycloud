@@ -1,0 +1,17 @@
+server:
+  port: 9000
+spring:
+  application:
+    name: gateway-server
+  cloud:
+    gateway:
+      routes:
+        - id: service-consumer1
+          uri: http://localhost:8082/
+          predicates:
+            - Path=/ticket/**
+logging:
+  level:
+    com.isaac.gatewayserver: warn
+  file:
+    name: mylogging

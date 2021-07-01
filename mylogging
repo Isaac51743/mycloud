@@ -1,0 +1,19 @@
+2021-05-23 00:57:13.035  INFO 47038 --- [main] c.i.g.GatewayServerApplication           : Starting GatewayServerApplication using Java 1.8.0_181 on YuehangdeMacBook-Pro.local with PID 47038 (/Users/yuehangzhao/IdeaProjects/my-cloud1/gateway-server/target/classes started by yuehangzhao in /Users/yuehangzhao/IdeaProjects/my-cloud1)
+2021-05-23 00:57:13.039 DEBUG 47038 --- [main] c.i.g.GatewayServerApplication           : Running with Spring Boot v2.4.5, Spring v5.3.6
+2021-05-23 00:57:13.040  INFO 47038 --- [main] c.i.g.GatewayServerApplication           : No active profile set, falling back to default profiles: default
+2021-05-23 00:57:13.585  INFO 47038 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=bbb86ef0-63f3-37ae-9faf-4f6d911205f1
+2021-05-23 00:57:14.070  INFO 47038 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2021-05-23 00:57:14.071  INFO 47038 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2021-05-23 00:57:14.071  INFO 47038 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2021-05-23 00:57:14.071  INFO 47038 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2021-05-23 00:57:14.071  INFO 47038 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2021-05-23 00:57:14.071  INFO 47038 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2021-05-23 00:57:14.071  INFO 47038 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2021-05-23 00:57:14.072  INFO 47038 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2021-05-23 00:57:14.072  INFO 47038 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2021-05-23 00:57:14.072  INFO 47038 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2021-05-23 00:57:14.072  INFO 47038 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2021-05-23 00:57:14.072  INFO 47038 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2021-05-23 00:57:14.073  INFO 47038 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2021-05-23 00:57:14.400  INFO 47038 --- [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 9000
+2021-05-23 00:57:14.495  INFO 47038 --- [main] c.i.g.GatewayServerApplication           : Started GatewayServerApplication in 1.799 seconds (JVM running for 2.258)
