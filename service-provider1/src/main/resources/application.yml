@@ -13,7 +13,7 @@ spring:
   datasource:
     url: jdbc:mysql://localhost:3306/quiz_system
     username: root
-    password: haha
+    password: WOSH
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     hibernate:
@@ -25,7 +25,7 @@ spring:
     host: localhost
   mail:
     username: zhaoyuehang66@gmail.com
-    password: haha
+    password: WO
     host: smtp.gmail.com
     port: 465
     properties:

@@ -30,6 +30,7 @@ class ServiceConsumer1ApplicationTests {
                 .compact();
         System.out.println(JWT);
     }
+
     @Test
     void rabbitMQSendTest() {
 

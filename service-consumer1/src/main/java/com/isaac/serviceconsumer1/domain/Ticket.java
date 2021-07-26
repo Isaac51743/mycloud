@@ -15,9 +15,4 @@ public class Ticket implements Serializable {
     private Integer ticketNumber;
     private String name;
 
-    public static void main(String[] args) {
-        Ticket a = new Ticket();
-        Ticket b = new Ticket(1, "haha");
-    }
-
 }

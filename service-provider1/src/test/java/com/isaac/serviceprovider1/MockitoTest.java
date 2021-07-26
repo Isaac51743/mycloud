@@ -3,6 +3,7 @@ package com.isaac.serviceprovider1;
 import com.isaac.serviceprovider1.controller.TicketController;
 import com.isaac.serviceprovider1.domain.User;
 import com.isaac.serviceprovider1.repository.UserRepository;
+import com.isaac.serviceprovider1.service.SchedulerService;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
@@ -20,6 +21,9 @@ public class MockitoTest {
     @InjectMocks
     TicketController ticketController;
 
+    @Mock
+    SchedulerService schedulerService;
+
     @Test
     void test1() {
         List<User> userList = new ArrayList<>();
@@ -30,6 +34,7 @@ public class MockitoTest {
         userList.add(user2);
         userList.add(user3);
         Mockito.when(userRepository.getUserSpecifyPassword("testPass")).thenReturn(userList);
+        Mockito.doNothing().when(schedulerService).testHello("anyString()");
         Assertions.assertEquals(userList, ticketController.getUserWithPassword("testPass"), "result of getUserWithPassword() not matched");
     }
 

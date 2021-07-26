@@ -24,6 +24,7 @@
         <module>gateway-server</module>
         <module>service-consumer1</module>
         <module>service-provider1</module>
+        <module>batch-server</module>
     </modules>
 
     <properties>

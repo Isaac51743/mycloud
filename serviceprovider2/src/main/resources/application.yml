@@ -10,11 +10,6 @@ eureka:
 spring:
   application:
     name: service-provider2
-  datasource:
-    username: root
-    password: haha
-    url: jdbc:mysql://localhost:3306/quiz_system
-    driver-class-name: com.mysql.cj.jdbc.Driver
 
 ##  authentication: config username, password in yml file
 #  security:

@@ -3,6 +3,7 @@ package com.isaac.serviceprovider2.config;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.orm.hibernate5.HibernateTransactionManager;
 import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
@@ -22,15 +23,15 @@ public class HibernateConfig {
     @Bean
     protected LocalSessionFactoryBean sessionFactory() {
         LocalSessionFactoryBean sessionFactory = new LocalSessionFactoryBean();
-        sessionFactory.setDataSource(dataSource());
+        sessionFactory.setDataSource(dataSourceH());
         sessionFactory.setPackagesToScan("com.isaac.serviceprovider2.domain");
         sessionFactory.setHibernateProperties(hibernateProperties());
 
         return sessionFactory;
     }
 
-//    @Bean // get rid of conflict with DataSource in JdbcTemplate
-    public DataSource dataSource() {
+    @Bean
+    public DataSource dataSourceH() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName(hibernateProperty.getDriver());
         dataSource.setUrl(hibernateProperty.getUrl());

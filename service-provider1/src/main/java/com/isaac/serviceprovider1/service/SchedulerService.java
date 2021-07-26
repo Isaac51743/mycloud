@@ -12,4 +12,6 @@ public class SchedulerService {
     public void scheduler1() {
         System.out.println("scheduled operation" + new Date());
     }
+
+    public void testHello(String s){};
 }

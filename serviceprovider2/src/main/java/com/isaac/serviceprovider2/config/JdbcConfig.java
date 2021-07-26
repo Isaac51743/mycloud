@@ -1,6 +1,7 @@
 package com.isaac.serviceprovider2.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -10,29 +11,21 @@ import javax.sql.DataSource;
 @Configuration
 public class JdbcConfig {
 
-    // method 1 to assign a DataSource
     @Autowired
     JdbcProperty jdbcProperty;
 
-    // method 2 to assign a DataSource
-    @Autowired
-    DataSource dataSource;
 
     @Bean
     public JdbcTemplate jdbcTemplate() {
         JdbcTemplate jdbcTemplate = new JdbcTemplate();
 
         // assign a DataSource
-        // method 1: create DataSource Bean using @Bean
-//        jdbcTemplate.setDataSource(jdbcDataSource());
-
-        // method 2: configure a DataSource in application,yml
-        jdbcTemplate.setDataSource(dataSource);
+        jdbcTemplate.setDataSource(jdbcDataSource());
 
         return jdbcTemplate;
     }
 
-//    @Bean // get rid of conflict with DataSource in application.yml
+    @Bean
     public DataSource jdbcDataSource() {
         DriverManagerDataSource driverManagerDataSource = new DriverManagerDataSource();
         driverManagerDataSource.setDriverClassName(jdbcProperty.getJdbcDriver());

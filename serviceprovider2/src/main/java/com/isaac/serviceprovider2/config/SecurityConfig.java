@@ -5,6 +5,7 @@ import com.isaac.serviceprovider2.handler.MyAuthenticationFailureHandler;
 import com.isaac.serviceprovider2.handler.MyAuthenticationSuccessHandler;
 import com.netflix.discovery.converters.Auto;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
@@ -27,6 +28,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     private UserDetailsService userDetailsService;
 
     @Autowired
+    @Qualifier("dataSourceH")
     private DataSource source;
 
     @Autowired
