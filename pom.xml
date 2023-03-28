@@ -25,6 +25,8 @@
         <module>service-consumer1</module>
         <module>service-provider1</module>
         <module>batch-server</module>
+        <module>service-consumer2</module>
+        <module>service-provider2</module>
     </modules>
 
     <properties>
